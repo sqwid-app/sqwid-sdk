@@ -4,7 +4,7 @@ SDK to build dApps compatible with Sqwid NFT Marketplace.
 
 ## Installation
 
-```yarn add sqwid-sdk```
+```yarn add @reef-chain/sqwid-sdk```
 
 Make sure the consuming project has `@reef-chain/util-lib` installed.
 
@@ -22,7 +22,7 @@ Importing connectToReef
 
 ```ts
 // import like this
-import { connectToReef } from 'sqwid-sdk';
+import { connectToReef } from '@reef-chain/sqwid-sdk';
 ```
 
 You can initialise it like this, and use the `state` to store the value of `signers`,`selectedReefSigner`,`provider`,`loading`,`reefState`,`error` etc.
@@ -49,7 +49,7 @@ Allows you to connect to Sqwid Backend, this should be called everytime you swit
 Importing `connectToSqwid`
 
 ```ts
-import {connectToSqwid} from 'sqwid-sdk';
+import {connectToSqwid} from '@reef-chain/sqwid-sdk';
 ```
 
 To connect to sqwid, the first requirement is connectToReef has been initialized already. As you need to pass the selectedSigner to connect to sqwid backend.
